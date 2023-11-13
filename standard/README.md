@@ -1,1 +1,3 @@
-### Ce répertoire contient la version courante du projet de standard CNIG Paysages
+# Ce répertoire contient la version courante du projet de standard CNIG Paysages
+
+ceci
