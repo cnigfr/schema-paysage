@@ -1,0 +1,108 @@
+{
+  "title": "LimiteDecoupagePaysager",
+  "definition": "Une limite de découpage paysager est une portion du contour d’un découpage paysager : unité paysagère ou ensemble paysager ou sous-ensemble paysager.\nCette classe est essentiellement destinée à renseigner l’utilisateur sur la nature et la précision de la limite.",
+  "Statut": "Recommandé pour les données des atlas réalisés après la publication du standard.",
+  "règle de saisie": "La limite de découpage paysager doit être saisie en utilisant le partage de géométrie avec les contours des découpages paysagers concernés.\nIl est recommandé de couper les limites de découpages paysagers :\n-En cas de changement de valeurs d’attribut\n-En cas de jonction avec une autre limite\nVoir conseils de mise en œuvre (annexe A).",
+  "type": "object",
+  "liste des attributs": [
+    {
+      "geometrie": {
+        "definition": "Représentation géométrique 2D de la limite du découpage paysager.",
+        "type": "string",
+        "minProperties": 1,
+        "maxProperties": 1,
+        "enum": [
+          "GM_Curve"
+        ],
+        "contraints": {
+          "required": true
+        }
+      }
+    }
+  ],
+  "identifiantLocal": [
+    {
+      "definition": "Chaîne de caractères identifiant de façon unique le découpage paysager au sein de sa classe et du  jeu de données dans lesquels il a été défini",
+      "type": "string",
+      "minProperties": 1,
+      "maxProperties": 1,
+      "remarque": "Un identifiant fourni de façon automatique par le SIG peut suffire.",
+      "exemple": "84",
+      "contraints": {
+        "required": true
+      }
+    }
+  ],
+  "identifiantGlobal": [
+    {
+      "type": "string",
+      "minProperties": 1,
+      "maxProperties": 1,
+      "definition": "Chaîne de caractères identifiant de façon unique la limite de découpage paysager au sein de sa classe et  de l’ensemble des atlas  de paysage sur le territoire français.",
+      "remarque": "Cet identifiant global doit être constitué par concaténation de l’identifiant de l’atlas et de l’identifiant local de la limite du  découpage paysager, en utilisant le point (.) comme séparateur.",
+      "exemple": "AtlasPaysage_dept_33_2020.84",
+      "contraints": {
+        "required": true
+      }
+    }
+  ],
+  "statut": [
+    {
+      "definition": "Cet attribut indique la fiabilité de la position de la limite, i.e. s’il s’agit d’une limite nette ou d’une limite floue.",
+      "type": "string",
+      "minProperties": 0,
+      "maxProperties": 1,
+      "enum": [
+        "limiteFranche",
+        "limiteFloue"
+      ],
+      "remarque": "Cet attribut peut être utilisé pour cartographier de façon différenciée les limites de découpage paysager selon leur caractère « limite nette » ou « limite floue ».\nIl est recommandé de fournir au moins l’un des 2 attributs statutLimite ou largeurEstimée.",
+      "example": "limiteFloue",
+      "nullable": true
+    }
+  ],
+  "largeurEstimee": [
+    {
+      "definition": "Largeur moyenne estimée de la zone de transition entre 2 découpages paysagers, exprimée en mètres.\nCet attribut mesure l’incertitude de la position de la limite sur le terrain.",
+      "type": "integer",
+      "minProperties": 0,
+      "maxProperties": 1,
+      "remarque": "Cet attribut peut être utilisé pour cartographier de façon différenciée les limites de découpage paysager selon leur largeur estimée sur le terrain. Il est recommandé de fournir au moins l’un des 2 attributs statutLimite ou largeurEstimée.\nIl est conseillé d’utiliser des valeurs arrondies pour exprimer cette largeurEstimée (ex : 10 m, 20 m, 50 m, 100 m, 200 m, 500 m, etc)",
+      "example": "500",
+      "nullable": true
+    }
+  ],
+  "nature": [
+    {
+      "definition": "Cet attribut indique quel objet géographique a été utilisé comme limite du découpage paysager",
+      "type": "string",
+      "minProperties": 0,
+      "maxProperties": 1,
+      "enum": [
+        "limiteAdministrative",
+        "ligneCrete",
+        "thalweg",
+        "rupturePente",
+        "frontUrbain",
+        "horizonMer",
+        "autre"
+      ],
+      "remarque": "Cet attribut doit être laissé vide si la limite du découpage paysager ne s’appuie sur aucun objet géographique (ex : une limite »floue »  passant à travers champs)",
+      "example": "ligneCrete",
+      "nullable": true
+    }
+  ],
+  "lienAtlas": [
+    {
+      "definition": "Lien vers la classe AtlasPaysage correspondant à la limite de découpage paysager.\nCe lien permet à l’utilisateur global de trouver les limites de découpages paysagers relatives à un atlas donné.",
+      "type": "string",
+      "minProperties": 1,
+      "maxProperties": 1,
+      "remarque": "En pratique, le lien vers l’atlas doit être fourni sous la forme de l’identifiant de l’atlas (qui joue ainsi le rôle de clé externe).",
+      "example": "AtlasPaysage_dept_33_2020",
+      "contraints": {
+        "required": true
+      }
+    }
+  ]
+}

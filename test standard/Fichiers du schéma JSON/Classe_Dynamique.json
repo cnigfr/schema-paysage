@@ -1,0 +1,114 @@
+{
+  "title": "Dynamique",
+  "definition": "Une dynamique est une évolution du paysage en général depuis la dernière version de l’atlas des paysages.\nUne dynamique est modélisée par un « data type », c’est-à-dire un attribut complexe ; celui-ci peut s’appliquer à tout niveau de découpage paysager : sous-unités paysagères, unités paysagères, ensembles paysagers.\nUn découpage paysager peut avoir plusieurs dynamiques.",
+  "statut": "Fortement recommandé au moins pour les atlas réalisés après la publication du standard.",
+  "règle de saisie": "L’objectif des données géomatiques étant de donner une information synthétique, il est recommandé de se limiter aux dynamiques principales.\nUn nombre maximal de 5-6 dynamiques par découpage paysager est considéré comme raisonnable.",
+  "type": "object",
+  "liste des attributs": [
+    {
+      "natureEvolution": [
+        {
+          "definition": "Catégorie d’évolution de la dynamique.",
+          "type": "string",
+          "minProperties": 1,
+          "maxProperties": 1,
+          "enum": [
+            "apparition",
+            "augmentation",
+            "disparition",
+            "diminution",
+            "stabilisation"
+          ],
+          "remarque": "La dynamique est décrite de façon standardisée par la combinaison de l’attribut « natureEvolution » et de l’attribut « objetEvolution ».",
+          "example": "augmentation"
+        }
+      ],
+      "objetEvolution": [
+        {
+          "definition": "Caractéristique paysagère sur laquelle porte l’évolution.",
+          "type": "string",
+          "minProperties": 1,
+          "maxProperties": 1,
+          "enum": [
+            "surfacesAnthropisees",
+            "zonesImpermeables",
+            "zonesBaties",
+            "zonesNonBaties",
+            "zonesPermeables",
+            "materiauxMineraux",
+            "materiauxComposites",
+            "surfacesNaturelles",
+            "solsNus",
+            "surfacesEau",
+            "nevesEtGlaciers",
+            "vegetationLigneuse",
+            "formationsArborees",
+            "feuillus",
+            "coniferes",
+            "formationArboreeMixte",
+            "formationsArbustives",
+            "autresFormationsLigneuses",
+            "vegetationNonLigneuse",
+            "formationsHerbacees",
+            "autresFormationsNonLigneuses",
+            "energie",
+            "pollutionLumineuse",
+            "autre"
+          ],
+          "remarque": "La dynamique est décrite par la combinaison de l’attribut « natureEvolution » et de l’attribut « objetEvolution ».",
+          "exemple": "energie"
+        }
+      ],
+      "description": [
+        {
+          "definition": "Texte libre décrivant la dynamique de façon plus détaillée ou plus adaptée que la combinaison natureEvolution + objetEvolution.",
+          "type": "string",
+          "minProperties": 0,
+          "maxProperties": 1,
+          "remarque": " Voir conseils de mise en œuvre (annexe A)",
+          "exemple": "Construction de 15 éoliennes sur la ligne de crête. Les toits de nombreuses fermes ont été équipés de panneaux photovoltaïques."
+        }
+      ],
+      "dateObservation": [
+        {
+          "definition": "Date à laquelle la dynamique a été observée.",
+          "type": "date",
+          "minProperties": 0,
+          "maxProperties": 1,
+          "remarque": "Cet attribut est à utiliser en cas de mise à jour ponctuelle d’une dynamique particulière sur un découpage paysager donné.\nUne révision systématique des dynamiques est à renseigner au moyen de l’attribut « dateRévisionDynamiques » de la classe AtlasPaysage",
+          "example": "2027.06.30"
+        }
+      ],
+      "lienUP": [
+        {
+          "definition": "Lien vers l’unité paysagère à laquelle s’applique cette dynamique",
+          "type": "string",
+          "minProperties": 1,
+          "maxProperties": 1,
+          "remarque": "En pratique, cet attribut est constitué de l’identifiant global de l’unité paysagère (qui joue le rôle de clé externe).",
+          "exemple": "AtlasPaysage_dept_33_2021.J2"
+        }
+      ],
+      "lienEP": [
+        {
+          "definition": "Lien vers l’ensemble  paysager auquel s’applique cette dynamique",
+          "type": "string",
+          "minProperties": 1,
+          "maxProperties": 1,
+          "remarque": "En pratique, cet attribut est constitué de l’identifiant global de l’ensemble  paysager (qui joue le rôle de clé externe).",
+          "exemple": "AtlasPaysage_dept_33_2021.J"
+        }
+      ],
+      "lienSousUP": [
+        {
+          "definition": "Lien vers la sous-unité paysagère à laquelle s’applique cette dynamique",
+          "type": "string",
+          "minProperties": 1,
+          "maxProperties": 1,
+          "remarque": "En pratique, cet attribut est constitué de l’identifiant global de la sous-unité paysagère (qui joue le rôle de clé externe).",
+          "exemple": "AtlasPaysage_dept_33_2021.3"
+        }
+      ]
+    }
+  ]
+}

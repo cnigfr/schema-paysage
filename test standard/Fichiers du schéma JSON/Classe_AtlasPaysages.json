@@ -1,0 +1,127 @@
+{
+  "$schema": "https://specs.frictionlessdata.io/schemas/table-schema.json",
+  "title": " Atlas_Données_Paysages",
+  "definition": "Un atlas du paysage est un document de connaissance des paysages.\nCette classe est destinée à fournir à l’utilisateur des informations générales sur l’atlas, ses conditions de réalisation et de mise à jour.",
+  "status": "mandatory",
+  "Input rules": "Pour un jeu de données correspondant à un atlas, cette classe doit comprendre une seule instance.",
+  "constraints": "L’emprise de l’atlas doit correspondre à l’agrégation des découpages paysagers (unités paysagères ou ensembles paysagers) qu’il contient.\nL’emprise de l’atlas doit aussi correspondre à l‘emprise du territoire d’analyse (département, région, parc ...)",
+  "countryCode":"FR",
+  "fields": [
+    {
+      "name": "emprise",
+      "description": "représentation géométrique 2D de l’emprise de l’atlas du paysage  correspondant au jeu de données.",
+      "type": "string",
+      "minProperties": 1,
+      "maxProperties": 1,
+      "enum": [
+        "GM_MultiSurface"
+      ],
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "nom",
+      "description": "Nom complet de l’atlas correspondant au jeu de données.",
+      "type": "string",
+      "minProperties": 1,
+      "maxProperties": 1,
+      "example": "Atlas des paysages de la Gironde",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "identifiant",
+      "description": "Chaîne de caractères identifiant de façon unique l’atlas du paysage au sein de l’ensemble des atlas disponibles sur le territoire français.",
+      "type": "string",
+      "minProperties": 1,
+      "maxProperties": 1,
+      "note": "L’identifiant doit être dérivé à partir des attributs « nom » et « date réalisation ».  (voir conseils de mise en œuvre)",
+      "example": "AtlasPaysage_dept_33_2020",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "maitreOuvrage",
+      "description": "Nom du ou des maîtres d’ouvrage, commanditaires de l’atlas des paysages",
+      "type": "string",
+      "minProperties": 1,
+      "example": "Conseil Départemental de la Gironde",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "maitreOeuvre",
+      "description": "Nom du ou des maîtres d’oeuvre ayant conduit la réalisation de l’atlas des paysages",
+      "type": "string",
+      "minProperties": 1,
+      "example": "Agence de paysages xxx ; Bureau d’études xxx",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "typeAtlas",
+      "description": "Niveau administratif de l’atlas correspondant au jeu de données",
+      "type": "string",
+      "minProperties": 1,
+      "maxProperties": 1,
+      "enum": [
+        "departement",
+        "region",
+        "parcNaturel",
+        "autre"
+      ],
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "lienAtlas",
+      "description": "Lien vers le site Internet où l’atlas correspondant au jeu de données est disponible",
+      "type": "string",
+      "minProperties": 1,
+      "maxProperties": 1,
+      "exemple": {
+        "url": "https://www.gironde.fr/environnement/atlas-des-paysages-de-la-gironde"
+      },
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "dateRealisationAtlas",
+      "description": "Date de fin de réalisation de l’atlas. La date de publication peut être choisie pour dater la fin de la réalisation.",
+      "type": "date",
+      "minProperties": 1,
+      "maxProperties": 1,
+      "example": "2021-10-31",
+      "note": "Il peut s’agir de la réalisation initiale de l’atlas des paysages sur un territoire donné ou de sa complète actualisation.",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "dateRevisionDynamiques",
+      "description": "Date de révision des informations liées aux dynamiques.",
+      "type": "date",
+      "minProperties": 0,
+      "maxProperties": 1,
+      "note": "Cet attribut est à renseigner dans le cas où une révision des dynamiques a lieu pour tous les découpages paysagers de l’atlas",
+      "example": "2026.06.25",
+      "nullable": true
+    },
+    {
+      "name": "lienOPP",
+      "description": "Lien vers l’OPP (Observatoire Photographique du Paysage) correspondant à l’atlas des paysages",
+      "type": "string",
+      "minProperties": 0,
+      "maxProperties": 1,
+      "example": "https://www.parc-golfe-morbihan.bzh/lobservatoire-photographique-des-paysages/",
+      "nullable": true
+    }
+  ]
+}

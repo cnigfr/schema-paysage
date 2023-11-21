@@ -1,0 +1,101 @@
+{
+    "$schema": "https://specs.frictionlessdata.io/schemas/table-schema.json",
+    "title": "DocumentPaysage",
+    "definition": "Un document paysage est un document illustrant un découpage paysa-ger. Il peut s’agir d’un bloc-diagramme, d’une coupe, d’un croquis, d’une photographie, etc",
+    "statuts": "Facultatif",
+    "règle de saisie": "La sélection des documents paysage à fournir sous forme de données géomatiques est à la discrétion de l’auteur ou du commanditaire de l’atlas.",
+    "type": "object",
+    "countryCode":"FR",
+    "fields": [
+        {
+            "name": "geometrie",
+            "type": "string",
+            "enum": [
+                "GM_Point"
+            ],
+            "minProperties": 1,
+            "maxProperties": 1,
+            "definition": "Localisation géométrique 2D du document paysage.",
+            "remarque": "Pour un document illustrant l’ensemble du découpage paysager, il est conseillé de positionner le document au centroïde du découpage.\nPour un document illustrant un site particulier du découpage paysager, il est conseillé de localiser le document sur ce site (il peut s’agir d’une localisation approximative).",
+            "contraints": {
+                "required": true
+            }
+        },
+        {
+            "name": "nom",
+            "type": "string",
+            "minProperties": 1,
+            "maxProperties": 1,
+            "definition": "Intitulé du document paysage",
+            "remarque": "Il peut s’agir par exemple de la légende d’une photographie.",
+            "exemple": "Les ruelles étroites du centre ancien - Langon",
+            "contraints": {
+                "required": true
+            }
+        },
+        {
+            "name": "date",
+            "type": "date",
+            "minProperties": 1,
+            "maxProperties": 1,
+            "definition": "Date à laquelle le document paysage a été réalisé.",
+            "remarque": "Pour une photographie, il est conseillé de donner la date exacte. Pour un autre document (ex : bloc diagramme), on peut mettre simplement la date de publication de l’atlas.",
+            "exemple": "2021.02.15",
+            "contraints": {
+                "required": true
+            }
+        },
+        {
+            "name": "auteur",
+            "type": "string",
+            "minProperties": 1,
+            "maxProperties": 1,
+            "definition": "Nom de l’auteur du document",
+            "contraints": {
+                "required": true
+            }
+        },
+        {
+            "name": "conditionsUtilisationTexte",
+            "definition": "Conditions d'utilisation du document, sous forme d'un texte",
+            "type": "string",
+            "minProperties": 0,
+            "maxProperties": 1,
+            "remarque": "Il peut s'agir par exemple du type de licence.",
+            "exemple": "CC BY (Creative Commons)",
+            "nullable": true
+        },
+        {
+            "name": "conditionsUtilisationURL",
+            "definition": "Conditions d’utilisation du document, sous forme d’un lien vers un texte.",
+            "type": "string",
+            "minProperties": 0,
+            "maxProperties": 1,
+            "remarque": "Cet attribut est à utiliser si les conditions d’utilisation nécessitent le recours à une description détaillée.",
+            "nullable": true
+        },
+        {
+            "name": "document",
+            "definition": "Lien vers le document paysage",
+            "type": "string",
+            "minProperties": 1,
+            "maxProperties": 1,
+            "remarque": "Les documents paysage doivent être disponibles en ligne",
+            "contraints": {
+                "required": true
+            }
+        },
+        {
+            "name": "lienAtlas",
+            "definition": "Lien vers la classe AtlasPaysage correspondant au document paysage.\nCe lien permet à l’utilisateur global de trouver les documents paysage relatifs à un atlas donné.",
+            "type": "string",
+            "minProperties": 1,
+            "maxProperties": 1,
+            "remarque": "En pratique, le lien vers l’atlas doit être fourni sous la forme de l’identifiant de l’atlas (qui joue ainsi le rôle de clé externe).",
+            "exemple": "AtlasPaysage_dept_33_2020",
+            "contraints": {
+                "required": true
+            }
+        }
+    ]
+}
