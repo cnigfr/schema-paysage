@@ -1,0 +1,1 @@
+Vous trouverez le tutoriel permettant d'ouvrir le geopackage sur QGIS dans notre rapport aux pages 20 et 21
