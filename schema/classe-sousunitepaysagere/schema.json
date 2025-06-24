@@ -57,7 +57,7 @@
         {
             "name": "geometrie",
             "description": "représentation géométrique 2D du découpage paysager",
-            "type": "GM_Multisurfaces",
+            "type": "GM_MultiSurface",
             "comment": "En règle générale, les découpages paysagers doivent constituer une portion continue du territoire. Le standard autorise une géométrie de type GM_MultiSurface pour permettre de traiter certaines exceptions (exemple : un ensemble d’îles).",
             "constraints": {
                 "required": true
