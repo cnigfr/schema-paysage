@@ -28,7 +28,7 @@ jobs:
     - name: Vérification du schéma classe-decoupagepaysager et des fichiers d'exemples associés
       run: |
         frictionless validate --type schema schema/classe-decoupagepaysager/schema.json
-        frictionless validate --schema schema/classe-classe-decoupagepaysager/schema.json schema/classe-classe-decoupagepaysager/exemple-valide.csv
+        frictionless validate --schema schema/classe-decoupagepaysager/schema.json schema/classe-decoupagepaysager/exemple-valide.csv
     - name: Vérification du schéma classe-documentpaysage et des fichiers d'exemples associés
       run: |
         frictionless validate --type schema schema/classe-documentpaysage/schema.json
