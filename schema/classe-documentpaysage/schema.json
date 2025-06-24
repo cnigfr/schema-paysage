@@ -87,7 +87,7 @@
             "maxProperties": 1,
             "description": "Date à laquelle le document paysage a été réalisé.",
             "comment": "Pour une photographie, il est conseillé de donner la date exacte. Pour un autre document (ex : bloc diagramme), on peut mettre simplement la date de publication de l’atlas.",
-            "example": "2021.02.15",
+            "example": "2021-02-15",
             "constraints": {
                 "required": true
             }
