@@ -1,3 +1,2 @@
-id_table1,nb_table1,choices_table1
-1,13,Choice 1
-2,56,Choice 2
+objetEvolution;natureEvolution;description;dateObservation;dateFin;lienUP;lienEP;lienSousUP
+energie;augmentation;Construction de 15 éoliennes sur la ligne de crête. Les toits de nombreuses fermes ont été équipés de panneaux photovoltaïques.;2027-06-30;;AtlasPaysage_dept_33_2021.J2;AtlasPaysage_dept_33_2021.J;AtlasPaysage_dept_33_2021.3
