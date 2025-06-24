@@ -85,7 +85,7 @@
       "type": "string",
       "minProperties": 1,
       "maxProperties": 1,
-      "comment": "L’identifiant doit être dérivé à partir des attributs « nom » et « date réalisation ».  (voir conseils de mise en œuvre)",
+      "comment": "L’identifiant doit être dérivé à partir des attributs « nom » et « date réalisation ». (Voir conseils de mise en oeuvre)",
       "example": "AtlasPaysage_dept_33_2020",
       "constraints": {
         "required": true
