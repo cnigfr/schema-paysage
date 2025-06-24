@@ -127,7 +127,7 @@
       "minProperties": 0,
       "maxProperties": 1,
       "comment": "Cet attribut est à utiliser en cas de mise à jour ponctuelle d’une dynamique particulière sur un découpage paysager donné.\nUne révision systématique des dynamiques est à renseigner au moyen de l’attribut « dateRévisionDynamiques » de la classe AtlasPaysage",
-      "example": "2027.06.30",
+      "example": "2027-06-30",
       "nullable": true
     },
     {
