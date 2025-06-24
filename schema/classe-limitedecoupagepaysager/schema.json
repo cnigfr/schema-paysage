@@ -115,7 +115,7 @@
       "nullable": true
     },
     {
-      "name": "nature",
+      "name": "natureLimite",
       "description": "Cet attribut indique quel objet géographique a été utilisé comme limite du découpage paysager",
       "type": "string",
       "minProperties": 0,
