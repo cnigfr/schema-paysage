@@ -25,10 +25,6 @@ jobs:
       run: |
         frictionless validate --type schema schema/classe-atlaspaysager/schema.json
         frictionless validate --schema schema/classe-atlaspaysager/schema.json schema/classe-atlaspaysager/exemple-valide.csv
-    - name: Vérification du schéma classe-decoupagepaysager et des fichiers d'exemples associés
-      run: |
-        frictionless validate --type schema schema/classe-decoupagepaysager/schema.json
-        frictionless validate --schema schema/classe-decoupagepaysager/schema.json schema/classe-decoupagepaysager/exemple-valide.csv
     - name: Vérification du schéma classe-documentpaysage et des fichiers d'exemples associés
       run: |
         frictionless validate --type schema schema/classe-documentpaysage/schema.json
@@ -53,6 +49,10 @@ jobs:
       run: |
         frictionless validate --type schema schema/classe-unitepaysagere/schema.json
         frictionless validate --schema schema/classe-unitepaysagere/schema.json schema/classe-unitepaysagere/exemple-valide.csv
+    - name: Vérification du schéma classe-decoupagepaysager et des fichiers d'exemples associés
+      run: |
+        frictionless validate --type schema schema/classe-decoupagepaysager/schema.json
+        frictionless validate --schema schema/classe-decoupagepaysager/schema.json schema/classe-decoupagepaysager/exemple-valide.csv
     - name: Vérification du datapackage
       run: |
         frictionless validate datapackage.json
