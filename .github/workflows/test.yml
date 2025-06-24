@@ -45,7 +45,7 @@ jobs:
       run: |
         frictionless validate --type schema schema/classe-limitedecoupagepaysager/schema.json
         frictionless validate --schema schema/classe-limitedecoupagepaysager/schema.json schema/classe-limitedecoupagepaysager/exemple-valide.csv
-    - name: Vérification du schéma classe-atlaspaysager et des fichiers d'exemples associés
+    - name: Vérification du schéma classe-sousunitepaysagere et des fichiers d'exemples associés
       run: |
         frictionless validate --type schema schema/classe-sousunitepaysagere/schema.json
         frictionless validate --schema schema/classe-sousunitepaysagere/schema.json schema/classe-sousunitepaysagere/exemple-valide.csv
