@@ -132,7 +132,7 @@
             }
         },
         {
-            "name": "lienAtlas",
+            "name": "lienAtlasPaysage",
             "description": "Lien vers la classe AtlasPaysage correspondant au document paysage.\nCe lien permet à l’utilisateur global de trouver les documents paysage relatifs à un atlas donné.",
             "type": "string",
             "minProperties": 1,
