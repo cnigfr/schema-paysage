@@ -1,8 +1,8 @@
 {
-    "name": "datapackage-dgv",
-    "title": "Modèle data gouv",
-    "description": "Description",
-    "id": "datapackage-dgv",
+    "name": "datapackage-paysage",
+    "title": "Schéma paysage",
+    "description": "Schéma pour le GT Paysage du CNIG",
+    "id": "datapackage-paysage",
     "resources": [
         {
             "name": "classe-atlaspaysager",
