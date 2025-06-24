@@ -207,7 +207,9 @@
             "type": "string",
             "comment": "En pratique, cet attribut est constitué de l’identifiant global de l’unité paysagère (qui joue le rôle de clé externe).",
             "example": "AtlasPaysage_dept_40_2020.GLA",
-            "required": "true"
+            "constraints": {
+                "required": "true"
+            }
         }
     ]
 }
