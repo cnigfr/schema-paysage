@@ -21,14 +21,38 @@ jobs:
           ${{ runner.os }}-
     - name: Installation des dépendances
       run: pip install -r requirements.txt
-    - name: Vérification du schéma table1 et des fichiers d'exemples associés
+    - name: Vérification du schéma classe-atlaspaysager et des fichiers d'exemples associés
       run: |
-        frictionless validate --type schema table1/schema.json
-        frictionless validate --schema table1/schema.json table1/exemple-valide.csv
-    - name: Vérification du schéma table2 et des fichiers d'exemples associés
+        frictionless validate --type schema schema/classe-atlaspaysager/schema.json
+        frictionless validate --schema schema/classe-atlaspaysager/schema.json schema/classe-atlaspaysager/exemple-valide.csv
+    - name: Vérification du schéma classe-decoupagepaysager et des fichiers d'exemples associés
       run: |
-        frictionless validate --type schema table2/schema.json
-        frictionless validate --schema table2/schema.json table2/exemple-valide.csv
+        frictionless validate --type schema schema/classe-decoupagepaysager/schema.json
+        frictionless validate --schema schema/classe-classe-decoupagepaysager/schema.json schema/classe-classe-decoupagepaysager/exemple-valide.csv
+    - name: Vérification du schéma classe-documentpaysage et des fichiers d'exemples associés
+      run: |
+        frictionless validate --type schema schema/classe-documentpaysage/schema.json
+        frictionless validate --schema schema/classe-documentpaysage/schema.json schema/classe-documentpaysage/exemple-valide.csv
+    - name: Vérification du schéma classe-dynamique et des fichiers d'exemples associés
+      run: |
+        frictionless validate --type schema schema/classe-dynamique/schema.json
+        frictionless validate --schema schema/classe-dynamique/schema.json schema/classe-dynamique/exemple-valide.csv
+    - name: Vérification du schéma classe-ensemblepaysager et des fichiers d'exemples associés
+      run: |
+        frictionless validate --type schema schema/classe-ensemblepaysager/schema.json
+        frictionless validate --schema schema/classe-ensemblepaysager/schema.json schema/classe-ensemblepaysager/exemple-valide.csv
+    - name: Vérification du schéma classe-limitedecoupagepaysager et des fichiers d'exemples associés
+      run: |
+        frictionless validate --type schema schema/classe-limitedecoupagepaysager/schema.json
+        frictionless validate --schema schema/classe-limitedecoupagepaysager/schema.json schema/classe-limitedecoupagepaysager/exemple-valide.csv
+    - name: Vérification du schéma classe-atlaspaysager et des fichiers d'exemples associés
+      run: |
+        frictionless validate --type schema schema/classe-sousunitepaysagere/schema.json
+        frictionless validate --schema schema/classe-sousunitepaysagere/schema.json schema/classe-sousunitepaysagere/exemple-valide.csv
+    - name: Vérification du schéma classe-unitepaysagere et des fichiers d'exemples associés
+      run: |
+        frictionless validate --type schema schema/classe-unitepaysagere/schema.json
+        frictionless validate --schema schema/classe-unitepaysagere/schema.json schema/classe-unitepaysagere/exemple-valide.csv
     - name: Vérification du datapackage
       run: |
         frictionless validate datapackage.json
