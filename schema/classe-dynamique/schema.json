@@ -54,25 +54,6 @@
   ],
   "fields": [
     {
-      "name": "natureEvolution",
-      "description": "Catégorie d’évolution de la dynamique.",
-      "type": "string",
-      "minProperties": 1,
-      "maxProperties": 1,
-      "enum": [
-        "apparition",
-        "augmentation",
-        "disparition",
-        "diminution",
-        "stabilisation"
-      ],
-      "comment": "La dynamique est décrite de façon standardisée par la combinaison de l’attribut « natureEvolution » et de l’attribut « objetEvolution ».",
-      "example": "augmentation",
-      "constraints": {
-        "required": true
-      }
-    },
-    {
       "name": "objetEvolution",
       "description": "Caractéristique paysagère sur laquelle porte l’évolution.",
       "type": "string",
@@ -106,6 +87,25 @@
       ],
       "comment": "La dynamique est décrite par la combinaison de l’attribut « natureEvolution » et de l’attribut « objetEvolution ».",
       "example": "energie",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "natureEvolution",
+      "description": "Catégorie d’évolution de la dynamique.",
+      "type": "string",
+      "minProperties": 1,
+      "maxProperties": 1,
+      "enum": [
+        "apparition",
+        "augmentation",
+        "disparition",
+        "diminution",
+        "stabilisation"
+      ],
+      "comment": "La dynamique est décrite de façon standardisée par la combinaison de l’attribut « natureEvolution » et de l’attribut « objetEvolution ».",
+      "example": "augmentation",
       "constraints": {
         "required": true
       }
