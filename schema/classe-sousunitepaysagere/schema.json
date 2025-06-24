@@ -57,7 +57,10 @@
         {
             "name": "geometrie",
             "description": "représentation géométrique 2D du découpage paysager",
-            "type": "GM_MultiSurface",
+            "type": "string",
+            "enum": [
+                "GM_MultiSurface"
+            ],
             "comment": "En règle générale, les découpages paysagers doivent constituer une portion continue du territoire. Le standard autorise une géométrie de type GM_MultiSurface pour permettre de traiter certaines exceptions (exemple : un ensemble d’îles).",
             "constraints": {
                 "required": true
@@ -75,7 +78,7 @@
         },
         {
             "name": "identifiantGlobal",
-            "description": "Chaîne de caractères identifiant de façon unique le découpage paysager au sein de sa classe et  de l’ensemble des atlas de paysage sur le territoire français.",
+            "description": "Chaîne de caractères identifiant de façon unique le découpage paysager au sein de sa classe et de l’ensemble des atlas de paysage sur le territoire français.",
             "type": "string",
             "comment": "Cet identifiant global doit être constitué par concaténation de l’identifiant de l’atlas et de l’identifiant local du  découpage paysager, en utilisant le point (.) comme séparateur.",
             "example": "AtlasPaysage_dept_33_2020.H1",
