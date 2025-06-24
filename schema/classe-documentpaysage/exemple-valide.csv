@@ -1,3 +1,2 @@
-id_table1,nb_table1,choices_table1
-1,13,Choice 1
-2,56,Choice 2
+geometrie;nom;date;auteur;conditionsUtilisationTexte;conditionsUtilisationURL;document;lienAtlasPaysage
+<gml:Point xmlns:gml="http://www.opengis.net/gml/3.2"><gml:pos>1 2</gml:pos></gml:Point>;Les ruelles étroites du centre ancien - Langon;2021-02-15;Clément Drouadaine;CC BY (Creative Commons);https://creativecommons.org/licenses/by/4.0/;http://texturl.fr;AtlasPaysage_dept_33_2020
