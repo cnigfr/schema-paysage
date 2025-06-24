@@ -1,3 +1,2 @@
-id_table1,nb_table1,choices_table1
-1,13,Choice 1
-2,56,Choice 2
+emprise;nom;identifiant;maitreOuvrage;maitreOeuvre;typeAtlas;lienAtlas;dateRealisationAtlas;dateRevisionDynamiques;lienOPP
+;Atlas des paysages de la Gironde;AtlasPaysage_dept_33_2020;Conseil Départemental de la Gironde;Agence de paysages xxx, Bureau d'études xxx;département;https://www.gironde.fr/environnement/atlas-des-paysages-de-la-gironde;2021-10-31;2026-06-25;https://www.parc-golfe-morbihan.bzh/lobservatoire-photograpique-des-paysages
