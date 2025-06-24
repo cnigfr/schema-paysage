@@ -56,7 +56,7 @@
     "fields": [
         {
             "name": "geometrie",
-            "description": "représentation géométrique 2D du découpage  paysager",
+            "description": "représentation géométrique 2D du découpage paysager",
             "type": "string",
             "enum": [
                 "GM_Multisurfaces"
@@ -68,7 +68,7 @@
         },
         {
             "name": "identifiantLocal",
-            "description": "Chaîne de caractères identifiant de façon unique le découpage paysa-ger au sein de sa classe et  de l’atlas dans lequel il a été défini",
+            "description": "Chaîne de caractères identifiant de façon unique le découpage paysager au sein de sa classe et de l’atlas dans lequel il a été défini",
             "type": "string",
             "comment": "Il est conseillé d’utiliser un système simple d’identification, par exemple une suite d’entiers et/ou de lettres  (voir conseils de mise en œuvre)",
             "example": "14, D, H1, B3c",
@@ -78,7 +78,7 @@
         },
         {
             "name": "identifiantGlobal",
-            "description": "Chaîne de caractères identifiant de façon unique le découpage paysa-ger au sein de sa classe et  de l’ensemble des atlas  de paysage sur le territoire français.",
+            "description": "Chaîne de caractères identifiant de façon unique le découpage paysager au sein de sa classe et de l’ensemble des atlas  de paysage sur le territoire français.",
             "type": "string",
             "comment": "Cet identifiant global doit être constitué par concaténation de l’identifiant de l’atlas et de l’identifiant local du  découpage paysager, en utilisant le point (.) comme séparateur.",
             "example": "AtlasPaysage_dept_33_2020.H1",
@@ -97,7 +97,7 @@
         },
         {
             "name": "lienPageAtlas",
-            "description": "Lien vers la partie de l’atlas de paysage décrivant le découpage paysa-ger. Ce lien permet à l’utilisateur d’avoir accès à la totalité de l’information concernant le découpage paysager.",
+            "description": "Lien vers la partie de l’atlas de paysage décrivant le découpage paysager. Ce lien permet à l’utilisateur d’avoir accès à la totalité de l’information concernant le découpage paysager.",
             "type": "string",
             "comment": "L’atlas doit être en ligne, soit sous la forme d’un site Web, soit sous forme d’un document PDF en ligne. Le lien doit donc se faire vers la page correspondante au découpage paysager du site web ou du document PDF.\nSi le découpage paysager est décrit sur plusieurs pages de l’atlas, donner le lien vers la page d’introduction.",
             "example": "https://www.gironde.fr/environnement/unites-de-paysage/h-le-bazadais#terrasse-bazadais",
@@ -107,13 +107,13 @@
         },
         {
             "name": "motClefGenerique",
-            "description": "Mots ou expressions indiquant les principales caractéristiques du dé-coupage paysager. Un mot-clef générique ne contient pas de nom propre.",
+            "description": "Mots ou expressions indiquant les principales caractéristiques du découpage paysager. Un mot-clef générique ne contient pas de nom propre.",
             "type": "array",
             "items": {
                 "type": "string",
                 "minItems": 1,
                 "example": [
-                    "Vallons, coteaux, terres labourées, boisements, villages anciens, vi-gnobles, séchoirs à tabac"
+                    "Vallons", "coteaux", "terres labourées", "boisements", "villages anciens", "vignobles", "séchoirs à tabac"
                 ]
             },
             "comment": "Les mots-clefs génériques sont issus de la description du découpage paysager dans l’atlas.",
@@ -128,7 +128,9 @@
             "items": {
                 "type": "string",
                 "minItems": 1,
-                "example": "Vallon du Lisos, valon de la Bassane, vallon du Beuve, Langon, berges de la Garonne, plaine de Castet-en-Dorthe"
+                "example": [
+                    "Vallon du Lisos", "valon de la Bassane", "vallon du Beuve", "Langon", "berges de la Garonne", "plaine de Castet-en-Dorthe"
+                ]
             },
             "comment": "Les mots-clefs génériques sont issus de la description du découpage paysager dans l’atlas.",
             "constraints": {
@@ -137,9 +139,9 @@
         },
         {
             "name": "description",
-            "description": "Texte court, extrait de l’atlas, décrivant de façon synthétique le dé-coupage paysager",
+            "description": "Texte court, extrait de l’atlas, décrivant de façon synthétique le découpage paysager",
             "type": "string",
-            "example": "Surplombant la vallée de la Garonne en rive gauche, cette unité est composée d’une terrasse alluviale résolument plane.\nCinq vallons (le Lisos, la Bassanne, le Beuve...), souvent accompagnés de prairies et de boisements, divisent l’unité perpendiculairement à l’axe de la vallée, enrichissant ainsi ses paysages de plateau à dominante céréalière.\nA l’exception de Langon, ville principale implantée à l’ouest, à l’aplomb du fleuve, l’urbanisation est plutôt dispersée.",
+            "example": "Surplombant la vallée de la Garonne en rive gauche, cette unité est composée d’une terrasse alluviale résolument plane.\nCinq vallons (le Lisos, la Bassanne, le Beuve...), souvent accompagnés de prairies et de boisements, divisent l’unité perpendiculairement à l’axe de la vallée, enrichissant ainsi ses paysages de plateau à dominante céréalière.\nÀ l’exception de Langon, ville principale implantée à l’ouest, à l’aplomb du fleuve, l’urbanisation est plutôt dispersée.",
             "nullable": true
         },
         {
@@ -150,7 +152,7 @@
             "nullable": true
         },
         {
-            "name": "datedescription",
+            "name": "dateDefinition",
             "description": "Date à laquelle le découpage paysager a été défini, délimité et nommé.",
             "type": "date",
             "comment": "Il peut s’agir de la date de réalisation de l’atlas en cours ou de la date de réalisation d’une version précédente de l’atlas.\nIl est particulièrement recommandé de documenter l’attribut dans ce deuxième cas.",
@@ -158,7 +160,7 @@
             "nullable": true
         },
         {
-            "name": "lienAtlas",
+            "name": "lienAtlasPaysage",
             "description": "Lien vers la classe AtlasPaysage correspondant au découpage paysager.\nCe lien permet à l’utilisateur global de trouver les découpages paysagers relatifs à un atlas donné.",
             "type": "string",
             "comment": "En pratique, le lien vers l’atlas doit être fourni sous la forme de l’identifiant de l’atlas (qui joue ainsi le rôle de clé externe).",
@@ -182,8 +184,8 @@
             }
         },
         {
-            "name": "codeRégion",
-            "description": "Code INSEE du ou des région(s) où se situe le découpage paysager.",
+            "name": "codeRegion",
+            "description": "Code INSEE de la ou des région(s) où se situe le découpage paysager.",
             "type": "array",
             "items": {
                 "type": "string",
