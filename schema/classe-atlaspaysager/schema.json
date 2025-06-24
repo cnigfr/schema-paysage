@@ -157,7 +157,7 @@
       "minProperties": 0,
       "maxProperties": 1,
       "comment": "Cet attribut est à renseigner dans le cas où une révision des dynamiques a lieu pour tous les découpages paysagers de l’atlas",
-      "example": "2026.06.25",
+      "example": "2026-06-25",
       "nullable": true
     },
     {
