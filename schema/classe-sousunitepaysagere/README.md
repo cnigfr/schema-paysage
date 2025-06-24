@@ -1,0 +1,3 @@
+# README de SousUnitePaysagere
+
+Une sous-unité paysagère est une subdivision d’une unité paysagère.\nLe découpage y est réalisé de manière plus fine, les sous–unités présentant entre elles de légères variations des composantes paysagères (liées à la topographie, à la fonctionnalité des milieux, aux tissus urbains…).\nLes sous-unités sont particulièrement utilisées au sein des unités paysagères très urbaines et peuvent être compatibles avec un découpage par quartier. \nComme pour les unités paysagères, les limites entre sous-unités peuvent être nettes ou « floues ».

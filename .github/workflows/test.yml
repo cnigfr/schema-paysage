@@ -1,0 +1,34 @@
+name: Vérification du respect des spécifications
+
+on:
+  push:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
+    - name: Cache pip
+      uses: actions/cache@v3
+      with:
+        path: ~/.cache/pip
+        key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
+        restore-keys: |
+          ${{ runner.os }}-pip-
+          ${{ runner.os }}-
+    - name: Installation des dépendances
+      run: pip install -r requirements.txt
+    - name: Vérification du schéma table1 et des fichiers d'exemples associés
+      run: |
+        frictionless validate --type schema table1/schema.json
+        frictionless validate --schema table1/schema.json table1/exemple-valide.csv
+    - name: Vérification du schéma table2 et des fichiers d'exemples associés
+      run: |
+        frictionless validate --type schema table2/schema.json
+        frictionless validate --schema table2/schema.json table2/exemple-valide.csv
+    - name: Vérification du datapackage
+      run: |
+        frictionless validate datapackage.json
