@@ -14,16 +14,6 @@
             "schema": "schema/classe-atlaspaysager/schema.json",
             "documentation": "schema/classe-atlaspaysager/README.md"
         },
-        {
-            "name": "classe-decoupagepaysager",
-            "path": "schema/classe-decoupagepaysager/exemple-valide.csv",
-            "profile": "tabular-data-resource",
-            "format": "csv",
-            "mediatype": "text/csv",
-            "encoding": "utf-8",
-            "schema": "schema/classe-decoupagepaysager/schema.json",
-            "documentation": "schema/classe-decoupagepaysager/README.md"
-        },
          {
             "name": "classe-documentpaysage",
             "path": "schema/classe-documentpaysage/exemple-valide.csv",
