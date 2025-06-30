@@ -1,2 +1,2 @@
 geometrie;identifiantLocal;identifiantGlobal;statut;largeurEstimee;natureLimite;lienAtlas
-<gml:LineString xmlns:gml="http://www.opengis.net/gml/3.2"><gml:posList>0 0 1 1</gml:posList></gml:LineString>;84;AtlasPaysage_dept_33_2020.84;limiteFloue;500;ligneCrete;AtlasPaysage_dept_33_2020
+<gml:LineString xmlns:gml="http://www.opengis.net/gml/3.2"><gml:posList>0 0 1 1</gml:posList></gml:LineString>;84;AtlasPaysage_dept_33_2020.84;limite floue;500;ligne de crête;AtlasPaysage_dept_33_2020

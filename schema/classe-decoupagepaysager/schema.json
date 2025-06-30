@@ -81,8 +81,8 @@
             "type": "object",
             "description": "Une sous-unité paysagère est une subdivision d’une unité paysagère.\nLe découpage y est réalisé de manière plus fine, les sous–unités présentant entre elles de légères variations des composantes paysagères (liées à la topographie, à la fonctionnalité des milieux, aux tissus urbains…).\nLes sous-unités sont particulièrement utilisées au sein des unités paysagères très urbaines et peuvent être compatibles avec un découpage par quartier. \nComme pour les unités paysagères, les limites entre sous-unités peuvent être nettes ou « floues ».",
             "status": "conditionnel.\nLes sous-unités paysagères ne sont pas définies dans tous les atlas. La classe SousUnitePaysagere doit être fournie si ce découpage est présent",
-            "input rules": "Toutes les sous-unités paysagères définies sous forme localisées dans l’atlas de paysage doivent être saisies dans le jeu de données correspon-dant.",
-            "constraints": "La géométrie d’une sous-unité paysagère doit être entièrement incluse dans la géométrie de l’unité paysagère à laquelle elle appartient.\nIl ne doit pas y avoir de recouvrements entre les sous-unités paysagères d’un même jeu de données. \nNOTE 1: Des exceptions à cette règle sont tolérées pour les données issues d’atlas réalisés avant la publication de ce standard.\nNOTE 2: Il n’y a pas forcément d’homogénéité: certaines unités paysa-gères peuvent faire l’objet d’un découpage en sous-unités paysagères et d’autres pas.",
+            "input rules": "Toutes les sous-unités paysagères définies sous forme localisées dans l’atlas de paysage doivent être saisies dans le jeu de données correspondant.",
+            "constraints": "La géométrie d’une sous-unité paysagère doit être entièrement incluse dans la géométrie de l’unité paysagère à laquelle elle appartient.\nIl ne doit pas y avoir de recouvrements entre les sous-unités paysagères d’un même jeu de données. \nNOTE 1 : Des exceptions à cette règle sont tolérées pour les données issues d’atlas réalisés avant la publication de ce standard.\nNOTE 2: Il n’y a pas forcément d’homogénéité: certaines unités paysa-gères peuvent faire l’objet d’un découpage en sous-unités paysagères et d’autres pas.",
             "fields": [
                 {
                     "name": "lienUP",
@@ -94,7 +94,7 @@
                 },
                 {
                     "name": "geometrie",
-                    "description": "représentation géométrique 2D du découpage  paysager",
+                    "description": "représentation géométrique 2D du découpage paysager",
                     "type": "string",
                     "enum": [
                         "GM_Multisurfaces"
@@ -106,7 +106,7 @@
                 },
                 {
                     "name": "identifiantLocal",
-                    "description": "Chaîne de caractères identifiant de façon unique le découpage paysa-ger au sein de sa classe et  de l’atlas dans lequel il a été défini",
+                    "description": "Chaîne de caractères identifiant de façon unique le découpage paysager au sein de sa classe et  de l’atlas dans lequel il a été défini",
                     "type": "string",
                     "comment": "Il est conseillé d’utiliser un système simple d’identification, par exemple une suite d’entiers et/ou de lettres  (voir conseils de mise en œuvre)",
                     "example": "14, D, H1, B3c",
@@ -438,9 +438,9 @@
             "$schema": "https://specs.frictionlessdata.io/schemas/table-schema.json",
             "title": "classe_EnsemblePaysager",
             "description": "Un ensemble paysager est observé à l’échelle d’un territoire régional. Il est issu de l’association de plusieurs unités paysagères dont les caracté-ristiques géomorphologiques, écologiques, d’occupation du sol et de perception des habitants et des acteurs sont cohérentes à l’échelle dé-zoomée du territoire régional.\nComme pour les unités paysagères, les limites entre ensembles paysagers peuvent être nettes ou « floues ». Cette nomination « EP » englobe celles parfois usitées telles que « grands paysages », « grands ensembles paysagers », « grandes entités paysagères », etc.",
-            "status": "Conditionnel.\nLes ensembles paysagers ne sont pas définis dans tous les atlas.  La classe EnsemblePaysager doit être fournie si ce découpage est présent dans l’atlas.\nDans certains atlas, seuls les ensembles paysagers sont définis. Cela peut être le cas par exemple de certains atlas régionaux.\nTout jeu de données du paysage doit comporter au moins l’une des deux classes suivantes : UnitéPaysagère ou EnsemblePaysager.",
+            "status": "Conditionnel.\nLes ensembles paysagers ne sont pas définis dans tous les atlas. La classe EnsemblePaysager doit être fournie si ce découpage est présent dans l’atlas.\nDans certains atlas, seuls les ensembles paysagers sont définis. Cela peut être le cas par exemple de certains atlas régionaux.\nTout jeu de données du paysage doit comporter au moins l’une des deux classes suivantes : UnitéPaysagère ou EnsemblePaysager.",
             "input rules": "Tous les ensembles paysagers définis dans l’atlas de paysage doivent être saisis dans le jeu de données correspondant.",
-            "constraints": "Les ensembles paysagers doivent former une partition de l’emprise de l’atlas auquel elles appartiennent : il ne doit y avoir ni trous, ni recou-vrements.\nNOTE  1: Des exceptions à cette règle sont tolérées pour les données issues d’atlas réalisés avant la publication de ce standard\nNOTE 2 : Si des ensembles paysagers sont définis à cheval sur plusieurs départements ou régions, il est acceptable que ces ensembles paysagers débordent de l’emprise de l’atlas.\n\nSi le jeu de données comprend une classe UnitéPaysagère, chaque en-semble paysager doit être composé d’unités paysagères ; la géométrie de l’ensemble  paysager doit correspondre à l’agrégation des géométries des unités paysagères composant l’ensemble paysager.",
+            "constraints": "Les ensembles paysagers doivent former une partition de l’emprise de l’atlas auquel elles appartiennent : il ne doit y avoir ni trous, ni recouvrements.\nNOTE 1 : Des exceptions à cette règle sont tolérées pour les données issues d’atlas réalisés avant la publication de ce standard\nNOTE 2 : Si des ensembles paysagers sont définis à cheval sur plusieurs départements ou régions, il est acceptable que ces ensembles paysagers débordent de l’emprise de l’atlas.\n\nSi le jeu de données comprend une classe UnitéPaysagère, chaque en-semble paysager doit être composé d’unités paysagères ; la géométrie de l’ensemble  paysager doit correspondre à l’agrégation des géométries des unités paysagères composant l’ensemble paysager.",
             "fields": [
                 {
                     "name": "geometrie",
@@ -458,7 +458,7 @@
                     "name": "identifiantLocal",
                     "description": "Chaîne de caractères identifiant de façon unique le découpage paysa-ger au sein de sa classe et  de l’atlas dans lequel il a été défini",
                     "type": "string",
-                    "comment": "Il est conseillé d’utiliser un système simple d’identification, par exemple une suite d’entiers et/ou de lettres  (voir conseils de mise en œuvre)",
+                    "comment": "Il est conseillé d’utiliser un système simple d’identification, par exemple une suite d’entiers et/ou de lettres (voir conseils de mise en œuvre)",
                     "example": "14, D, H1, B3c",
                     "constraints": {
                         "required": true

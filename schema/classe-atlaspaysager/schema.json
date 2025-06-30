@@ -5,7 +5,7 @@
   "description": "Un atlas du paysage est un document de connaissance des paysages.\nCette classe est destinée à fournir à l’utilisateur des informations générales sur l’atlas, ses conditions de réalisation et de mise à jour.",
   "status": "obligatoire",
   "input rules": "Pour un jeu de données correspondant à un atlas, cette classe doit comprendre une seule instance.",
-  "constraints": "L’emprise de l’atlas doit correspondre à l’agrégation des découpages paysagers (unités paysagères ou ensembles paysagers) qu’il contient.\nL’emprise de l’atlas doit aussi correspondre à l‘emprise du territoire d’analyse (département, région, parc ...)",
+  "constraints": "L’emprise de l’atlas doit correspondre à l’agrégation des découpages paysagers (unités paysagères ou ensembles paysagers) qu’il contient.\nL’emprise de l’atlas doit aussi correspondre à l‘emprise du territoire d’analyse (département, région, parc...)",
   "keywords": [
     "Données géographiques",
     "paysage",
@@ -57,7 +57,7 @@
   "fields": [
     {
       "name": "emprise",
-      "description": "Représentation géométrique 2D de l’emprise de l’atlas du paysage  correspondant au jeu de données.",
+      "description": "Représentation géométrique 2D de l’emprise de l’atlas du paysage correspondant au jeu de données.",
       "type": "string",
       "minProperties": 1,
       "maxProperties": 1,
@@ -85,7 +85,7 @@
       "type": "string",
       "minProperties": 1,
       "maxProperties": 1,
-      "comment": "L’identifiant doit être dérivé à partir des attributs « nom » et « date réalisation ». (Voir conseils de mise en oeuvre)",
+      "comment": "L’identifiant doit être dérivé à partir des attributs « nom » et « date realisation » (voir conseils de mise en œuvre).",
       "example": "AtlasPaysage_dept_33_2020",
       "constraints": {
         "required": true
@@ -93,7 +93,7 @@
     },
     {
       "name": "maitreOuvrage",
-      "description": "Nom du ou des maîtres d’ouvrage, commanditaires de l’atlas des paysages",
+      "description": "Nom du ou des maîtres d’ouvrage, commanditaires de l’atlas des paysages.",
       "type": "string",
       "minProperties": 1,
       "example": "Conseil Départemental de la Gironde",
@@ -103,7 +103,7 @@
     },
     {
       "name": "maitreOeuvre",
-      "description": "Nom du ou des maîtres d’oeuvre ayant conduit la réalisation de l’atlas des paysages",
+      "description": "Nom du ou des maîtres d’oeuvre ayant conduit la réalisation de l’atlas des paysages.",
       "type": "string",
       "minProperties": 1,
       "example": "Agence de paysages xxx ; Bureau d’études xxx",
@@ -113,14 +113,14 @@
     },
     {
       "name": "typeAtlas",
-      "description": "Niveau administratif de l’atlas correspondant au jeu de données",
+      "description": "Niveau administratif de l’atlas correspondant au jeu de données.",
       "type": "string",
       "minProperties": 1,
       "maxProperties": 1,
       "enum": [
-        "departement",
-        "region",
-        "parcNaturel",
+        "département",
+        "région",
+        "parc naturel",
         "autre"
       ],
       "constraints": {
@@ -129,7 +129,7 @@
     },
     {
       "name": "lienAtlas",
-      "description": "Lien vers le site Internet où l’atlas correspondant au jeu de données est disponible",
+      "description": "Lien vers le site Internet où l’atlas correspondant au jeu de données est disponible.",
       "type": "string",
       "minProperties": 1,
       "maxProperties": 1,
@@ -156,16 +156,15 @@
       "type": "date",
       "minProperties": 0,
       "maxProperties": 1,
-      "comment": "Cet attribut est à renseigner dans le cas où une révision des dynamiques a lieu pour tous les découpages paysagers de l’atlas",
+      "comment": "Cet attribut est à renseigner dans le cas où une révision des dynamiques a lieu pour tous les découpages paysagers de l’atlas.",
       "example": "2026-06-25",
       "nullable": true
     },
     {
       "name": "lienOPP",
-      "description": "Lien vers l’OPP (Observatoire Photographique du Paysage) correspondant à l’atlas des paysages",
+      "description": "Lien vers le ou les OPP (Observatoire Photographique du Paysage) correspondant à l’atlas des paysages.",
       "type": "string",
       "minProperties": 0,
-      "maxProperties": 1,
       "example": "https://www.parc-golfe-morbihan.bzh/lobservatoire-photographique-des-paysages/",
       "nullable": true
     }

@@ -83,7 +83,7 @@
       "type": "string",
       "minProperties": 1,
       "maxProperties": 1,
-      "description": "Chaîne de caractères identifiant de façon unique la limite de découpage paysager au sein de sa classe et  de l’ensemble des atlas  de paysage sur le territoire français.",
+      "description": "Chaîne de caractères identifiant de façon unique la limite de découpage paysager au sein de sa classe et de l’ensemble des atlas  de paysage sur le territoire français.",
       "comment": "Cet identifiant global doit être constitué par concaténation de l’identifiant de l’atlas et de l’identifiant local de la limite du  découpage paysager, en utilisant le point (.) comme séparateur.",
       "example": "AtlasPaysage_dept_33_2020.84",
       "constraints": {
@@ -110,27 +110,27 @@
       "type": "integer",
       "minProperties": 0,
       "maxProperties": 1,
-      "comment": "Cet attribut peut être utilisé pour cartographier de façon différenciée les limites de découpage paysager selon leur largeur estimée sur le terrain. Il est recommandé de fournir au moins l’un des 2 attributs statutLimite ou largeurEstimée.\nIl est conseillé d’utiliser des valeurs arrondies pour exprimer cette largeurEstimée (ex : 10 m, 20 m, 50 m, 100 m, 200 m, 500 m, etc)",
+      "comment": "Cet attribut peut être utilisé pour cartographier de façon différenciée les limites de découpage paysager selon leur largeur estimée sur le terrain. Il est recommandé de fournir au moins l’un des 2 attributs statutLimite ou largeurEstimée.\nIl est conseillé d’utiliser des valeurs arrondies pour exprimer cette largeurEstimée (ex : 10 m, 20 m, 50 m, 100 m, 200 m, 500 m, etc.).",
       "example": "500",
       "nullable": true
     },
     {
       "name": "natureLimite",
-      "description": "Cet attribut indique quel objet géographique a été utilisé comme limite du découpage paysager",
+      "description": "Cet attribut indique quel objet géographique a été utilisé comme limite du découpage paysager.",
       "type": "string",
       "minProperties": 0,
       "maxProperties": 1,
       "enum": [
-        "limiteAdministrative",
-        "ligneCrete",
+        "limite administrative",
+        "ligne de crête",
         "thalweg",
-        "rupturePente",
-        "frontUrbain",
-        "horizonMer",
+		"front urbain",
+        "rupture de pente",
+        "horizon en mer",
         "autre"
       ],
-      "comment": "Cet attribut doit être laissé vide si la limite du découpage paysager ne s’appuie sur aucun objet géographique (ex : une limite »floue »  passant à travers champs)",
-      "example": "ligneCrete",
+      "comment": "Cet attribut doit être laissé vide si la limite du découpage paysager ne s’appuie sur aucun objet géographique (ex : une limite « floue » passant à travers champs).",
+      "example": "lignede crête",
       "nullable": true
     },
     {
