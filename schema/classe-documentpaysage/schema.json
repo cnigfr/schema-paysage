@@ -1,6 +1,7 @@
 {
     "$schema": "https://specs.frictionlessdata.io/schemas/table-schema.json",
-    "title": "DocumentPaysage",
+    "title": "Document Paysage",
+	"name": "DocumentPaysage",
     "description": "Un document paysage est un document illustrant un découpage paysager. Il peut s’agir d’un bloc-diagramme, d’une coupe, d’un croquis, d’une photographie, etc",
     "statut": "Facultatif",
     "input rules": "La sélection des documents paysage à fournir sous forme de données géomatiques est à la discrétion de l’auteur ou du commanditaire de l’atlas.",

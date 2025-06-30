@@ -1,6 +1,7 @@
 {
     "$schema": "https://specs.frictionlessdata.io/schemas/table-schema.json",
-    "title": "EnsemblePaysager",
+    "name": "EnsemblePaysager",
+	"title": "Ensemble Paysager",
     "description": "Un ensemble paysager est observé à l’échelle d’un territoire régional. Il est issu de l’association de plusieurs unités paysagères dont les caracté-istiques géomorphologiques, écologiques, d’occupation du sol et de perception des habitants et des acteurs sont cohérentes à l’échelle dézoomée du territoire régional.\nComme pour les unités paysagères, les limites entre ensembles paysagers peuvent être nettes ou « floues ». Cette nomination « EP » englobe celles parfois usitées telles que « grands paysages », « grands ensembles paysagers », « grandes entités paysagères », etc.",
     "status": "Conditionnel.\nLes ensembles paysagers ne sont pas définis dans tous les atlas. La classe EnsemblePaysager doit être fournie si ce découpage est présent dans l’atlas.\nDans certains atlas, seuls les ensembles paysagers sont définis. Cela peut être le cas par exemple de certains atlas régionaux.\nTout jeu de données du paysage doit comporter au moins l’une des deux classes suivantes : UnitéPaysagère ou EnsemblePaysager.",
     "input rules": "Tous les ensembles paysagers définis dans l’atlas de paysage doivent être saisis dans le jeu de données correspondant.",
