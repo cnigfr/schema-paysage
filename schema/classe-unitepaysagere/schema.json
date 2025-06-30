@@ -35,7 +35,7 @@
         {
           "title": "Exemple valide",
           "name": "exemple-valide-csv",
-          "path": "https://github.com/cnigfr/schema-sites-economiques/schema/etablissement/raw/v1.0.0/exemple-valide.csv"
+          "path": "https://github.com/cnigfr/schema-paysage/blob/main/schema/classe-unitepaysagere/exemple-valide.csv"
         }
       ],
       "sources": [
