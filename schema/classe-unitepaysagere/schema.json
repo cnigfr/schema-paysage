@@ -263,7 +263,7 @@
             "type": "string",
 			"minProperties": 0,
             "comment": "Il est conseillé de se limiter à un très petit nombre d’images, voire à une seule.",
-			"example": "http://mon_image.fr"
+			"example": "http://mon_image.fr",
             "nullable": true
         },
         {
