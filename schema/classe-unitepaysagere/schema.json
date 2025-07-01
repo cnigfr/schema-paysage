@@ -276,6 +276,16 @@
             "example": "2021-10-31",
             "nullable": true
         },
+		{
+            "name": "dateActualisation",
+            "description": "Date à laquelle l’unité paysagère a été actualisée.",
+            "type": "date",
+			"minProperties": 0,
+			"maxProperties": 1,
+            "comment": "Il peut s’agir de la date où certains attributs ont été modifiés.",
+            "example": "2021-11-24",
+            "nullable": true
+        },
         {
             "name": "lienAtlasPaysage",
             "description": "Lien vers la classe AtlasPaysage correspondant à l’unité paysagère.\nCe lien permet à l’utilisateur global de trouver les unités paysagères relatifs à un atlas donné.",
