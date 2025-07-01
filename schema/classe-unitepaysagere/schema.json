@@ -160,7 +160,7 @@
             ],
             "comment": "Cet attribut est à utiliser seulement pour les unités paysagères pour lesquelles il y a clairement deux valeurs dominantes d'orographie ou de géomorphologie. Cela peut être le cas par exemple d'une UP influencée fortement à la fois par son relief et par sa géomorphologie liée à la présence de l'eau. Les caractéristiques secondaires sont à renseigner par les attributs relatifs aux mots-clefs.",
             "example": "plaine",
-            "nullable": true,
+            "nullable": true
         },
         {
             "name": "dominantePaysagere1",
