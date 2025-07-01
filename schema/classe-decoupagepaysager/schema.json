@@ -1,6 +1,6 @@
 {
     "$schema": "https://specs.frictionlessdata.io/schemas/table-schema.json",
-    "name": "DecoupagePaysager",
+    "name": "decoupage-paysager",
 	"title": "Découpage Paysager",
     "description": "C’est l’organisation paysagère traduite en trois échelles de subdivision: Sous-Unité Paysagère < Unité Paysagère < Ensemble Paysager.\nLe mètre étalon est l’Unité Paysagère (UP), avec l’Ensemble Paysager (EP) à l’échelle supérieure et la Sous-Unité Paysagère (SUP) à l’échelle plus fine.",
     "remark": "Il s’agit d’une classe abstraite regroupant les attributs communs aux di-vers découpages paysagers : unités paysagères, ensembles paysagers, sous-unités paysagères.\nCette classe ne comporte aucune instance.  Les instances sont portées au niveau des classes filles : UnitéPaysagere, EnsemblePaysager, SousUni-tePaysagere.\nEn d’autres mots, les découpages paysagers sont composés d’unités paysagères, d’ensembles paysagers et de sous-unités paysagères.",
