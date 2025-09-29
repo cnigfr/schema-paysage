@@ -5,6 +5,6 @@ Ce fichier répertorie les changements entre différentes versions d'un schéma.
 
 Initialisation du schéma pour mise en ligne
 
-## Version 1.0.0 du 2025-07-04
+## Version 1.0.0 du 2025-09-29
 
 Correction des schémas : ajout des attributs facultatifs, des cardinalités, des fichiers d'exemple, correction des incohérences.
