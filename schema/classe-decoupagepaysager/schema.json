@@ -30,13 +30,6 @@
           "path": "https://spdx.org/licenses/etalab-2.0.html"
         }
       ],
-      "resources": [
-        {
-          "title": "Exemple valide",
-          "name": "exemple-valide-csv",
-          "path": "https://github.com/cnigfr/schema-paysage/blob/main/schema/classe-decoupagepaysager/exemple-valide.csv"
-        }
-      ],
       "sources": [
         {
           "title": "Standard Paysages",
@@ -44,7 +37,7 @@
         }
       ],
       "created": "2023",
-      "version": "1.0.0",
+      "version": "v1.0.1",
       "contributors": [
         {
           "title": "Membres du GT Paysages du CNIG",
