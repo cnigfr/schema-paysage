@@ -5,7 +5,7 @@
   "description": "Un atlas du paysage est un document de connaissance des paysages.\nCette classe est destinée à fournir à l’utilisateur des informations générales sur l’atlas, ses conditions de réalisation et de mise à jour.",
   "status": "obligatoire",
   "input rules": "Pour un jeu de données correspondant à un atlas, cette classe doit comprendre une seule instance.",
-  "constraints": "L’emprise de l’atlas doit correspondre à l’agrégation des découpages paysagers (unités paysagères ou ensembles paysagers) qu’il contient.\nL’emprise de l’atlas doit aussi correspondre à l'emprise du territoire d’analyse (département, région, parc...)",
+  "constraints": "L’emprise de l’atlas doit correspondre à l’agrégation des découpages paysagers (unités paysagères ou ensembles paysagers) qu’il contient.\nL’emprise de l’atlas doit aussi correspondre à l’emprise du territoire d’analyse (département, région, parc...)",
   "keywords": [
     "Données géographiques",
     "paysage",

@@ -131,7 +131,7 @@
         "autre"
       ],
       "comment": "Cet attribut doit être laissé vide si la limite du découpage paysager ne s’appuie sur aucun objet géographique (ex : une limite « floue » passant à travers champs).",
-      "example": "lignede crête",
+      "example": "ligne de crête",
       "nullable": true
     },
     {
