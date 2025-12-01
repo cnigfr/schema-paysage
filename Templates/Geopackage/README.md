@@ -69,13 +69,23 @@ Le GeoPackage contient **7 tables principales** :
 - GeoPackage 1.3.0
 - Prêt à l'emploi
 
-### GeoPackage vide
+### Fichier GeoPackage vide
 
 **`template_paysage.gpkg`**
 - GeoPackage vide pré-configuré
 - Créé à partir du script SQL
 - Prêt à être utilisé directement
 - Aucune installation requise
+- *Ce fichier de documentation le décrit*
+
+### Fichiers Shapefile vides
+
+Dossier **`template_paysage.shp`**
+- Shapefile vides pré-configurés
+- Créés à partir du Geopackage
+- Prêts à être utilisés directement
+- Aucune installation requise
+- *Voir la documentation spécifique dans le dossier [Shapefile](../Shapefile)*
 
 ### Script d'installation
 
