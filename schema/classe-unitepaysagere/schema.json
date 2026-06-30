@@ -171,7 +171,7 @@
 			"enum": [
 				"paysage bâti continu",
 				"paysage bâti discontinu",
-				"paysage d'infrastuctures",
+				"paysage d'infrastructures",
 				"paysage agricole",
 				"paysage boisé",
 				"paysage d'eau ou humide",
@@ -192,7 +192,7 @@
 			"enum": [
 				"paysage bâti continu",
 				"paysage bâti discontinu",
-				"paysage d'infrastuctures",
+				"paysage d'infrastructures",
 				"paysage agricole",
 				"paysage boisé",
 				"paysage d'eau ou humide",
